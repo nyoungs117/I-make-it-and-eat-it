@@ -258,10 +258,15 @@ document.addEventListener("DOMContentLoaded", () => {
       // 이미지 클래스에 따른 배경색 설정
       const colors = {
         ci1: '#CCCCCC',
-        ci2: '#FDFFA8',
-        ci3: '#C5FFF1',
-        ci4: '#FFD3FB',
-        ci5: '#ffffff'
+        ci2: '#ffffff',
+        ci3: '#FDFFA8',
+        ci4: '#ffffff',
+        ci5: '#C5FFF1',
+        ci6: '#ffffff',
+        ci7: '#FFD3FB',
+        ci8: '#ffffff',
+        ci9: '#FFD3FB',
+        ci10: '#C5FFF1'
       };
     
       // 이미지의 두 번째 클래스명 가져오기
