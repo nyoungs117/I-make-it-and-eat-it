@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2_1.recipe 레시피</title>
+    <link rel="stylesheet" href="./css/recipe2.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/circular-revealer@0.0.8/dist/index.iife.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header>
+        <div id="sublogo">
+          <h1>RECOMMENDATION</h1>
+          <h4>: 주로 즐겨보는 사람들의 카드에 마우스 커서를 올려서 더 자세한 내용을 보세요</h4>
+        </div>
+        <div>
+          <button class="header__button nav-btn-js" type="button"></button>
+          <nav class="header__nav nav-js" data-active="false">
+            <ul class="header__menu">
+              <li class="header__menu-item"><a href="./index.html">Home</a></li>
+              <li class="header__menu-item">
+                <a href="./recipe.html">Recipe</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./calculation.html">Calculation</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./recommendation.html">Recommendation</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="book_mark">
+        <a href="./recipe.html"><div class="bmark1"></div></a>
+        <a href="./recipe2.html"><div class="bmark2"></div></a>
+    </div>
+
+      <div class="b_c"></div>
+      <div class="book">
+        <input type="checkbox" id="c1" />
+        <input type="checkbox" id="c2" />
+        <input type="checkbox" id="c3" />
+        <div id="cover"><img src="./img/04.jpg" /></div>
+        <div class="flip-book">
+          <div class="flip" id="p1">
+            <div class="back b1">
+              <div class="back-img bi1">
+                <ul>
+                  <li>
+                    <h2>
+                      두부와 고기를 <br />
+                      수분이 날아가도록 <br />
+                      볶아주세요.
+                    </h2>
+                  </li>
+                  <li>
+                    <img src="./img/b20.jpg" />
+                  </li>
+                </ul>
+              </div>
+
+              <div class="back-img bi2">
+                <ul>
+                  <li>
+                    <img class="bi1" src="./img/b21.jpg" />
+                  </li>
+                  <li>
+                    <h2>
+                      간장 한 스푼에 <br />
+                      고추, 참기름을 넣고 <br />
+                      잘 섞어주세요.
+                    </h2>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="back-img bi6">
+                <ul>
+                  <li>
+                    <h2>
+                      물기를 짠 배추에<br />
+                      준비해둔 속재료를 <br />
+                      위에 펼쳐주세요.
+                    </h2>
+                  </li>
+                  <li>
+                    <img class="bi1" src="./img/b21.jpg" />
+                  </li>
+                </ul>
+              </div>
+
+              <label class="back-btn" for="c1">back</label>
+            </div>
+
+            <div class="front f1">
+              <div class="front-img fi1">
+                <ul>
+                  <li>
+                    <img src="./img/b18.jpg" />
+                  </li>
+                  <li>
+                    <h2>
+                      알배추를 한 장씩 뜯어주고,<br />
+                      잘 씻어 준비해주세요.
+                    </h2>
+                  </li>
+                </ul>
+              </div>
+              <div class="front-img fi2">
+                <ul>
+                  <li>
+                    <h2>
+                      찜기에 알배추를 <br />
+                      잘 펴주고 10분 정도<br />
+                      쪄주세요.
+                    </h2>
+                  </li>
+                  <li>
+                    <img src="./img/b19.jpg" />
+                  </li>
+                </ul>
+              </div>
+
+              <div class="front-img fi7">
+                <ul>
+                  <li>
+                    <img src="./img/b18.jpg" />
+                  </li>
+                  <li>
+                    <h2>
+                      찐 배추를 식혀두고<br />
+                      다 식혀주었으면 물기를 <br />
+                      어느정도 짜주세요.
+                    </h2>
+                  </li>
+                </ul>
+              </div>
+
+              <label class="next-btn" for="c1">next</label>
+            </div>
+          </div>
+          <div class="flip" id="p2">
+            <!-- <div class="back b2">
+<div class="back-img bi3">
+<ul>
+<li>
+<h2>
+배추를 잎과 줄기가 <br>
+같이 있도록 듬성듬성<br>
+먹기 좋은 크기로 잘라주세요.
+</h2>
+</li>
+<li>
+<img src="./img/b22.jpg">
+</li>
+</ul>
+</div>
+
+<div class="back-img bi4">
+<ul>
+<li>
+<img src="./img/b23.jpg">
+</li>
+<li>
+<h2>
+잘 절여진 배추는<br>
+잘 구부러지기 때문에<br>
+물에 두어번 헹궈서 체에 <br>
+물기를 빼주세요.
+</h2>
+</li>
+</ul>
+</div>
+<div class="back-img bi5">
+<ul>
+<li>
+<h2>
+고춧가루 다섯 숟가락과
+</h2>
+</li>
+<li>
+<img src="./img/b24.jpg">
+</li>
+</ul>
+</div>
+ 
+<label class="back-btn" for="c2">back</label>
+</div> -->
+
+            <div class="back b2">
+
+              <label class="back-btn" for="c2">back</label>
+            </div>
+
+            <div class="front">
+              <div class="front-img fi12">
+                <ul>
+                  <li>
+                    <h2>
+                      그리고 김밥을 싸듯 <br />
+                      잘 말아주시고 먹기좋은<br />
+                      크기로 썰어주세요.
+                    </h2>
+                  </li>
+                  <li>
+                    <img src="./img/b19.jpg" />
+                  </li>
+                </ul>
+              </div>
+              <div class="front-img fi7">
+                <ul>
+                  <li>
+                    <img src="./img/b18.jpg" />
+                  </li>
+                  <li>
+                    <h2>그럼 양배추 롤 완성 !</h2>
+                  </li>
+                </ul>
+              </div>
+
+              <a href="./recipe2_2.html"><label class="next-btn">next</label></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <section id="simg">
+        <div class="scrollimg" id="scrollimg">
+          <img src="./img/o1.png" alt="스크롤 배추 이미지">
+          <img src="./img/o2.png" alt="스크롤 파 이미지">
+          <img src="./img/o4.png" alt="스크롤 양파 이미지">
+          <img src="./img/o1.png" alt="스크롤 배추 이미지">
+          <img src="./img/o2.png" alt="스크롤 파 이미지">
+          <img src="./img/o4.png" alt="스크롤 양파 이미지">
+          <img src="./img/o1.png" alt="스크롤 배추 이미지">
+          <img src="./img/o2.png" alt="스크롤 파 이미지">
+          <img src="./img/o4.png" alt="스크롤 양파 이미지">
+          <img src="./img/o1.png" alt="스크롤 배추 이미지">
+          <img src="./img/o2.png" alt="스크롤 파 이미지">
+          <img src="./img/o4.png" alt="스크롤 양파 이미지">
+          <img src="./img/o1.png" alt="스크롤 배추 이미지">
+          <img src="./img/o2.png" alt="스크롤 파 이미지">
+          <img src="./img/o4.png" alt="스크롤 양파 이미지">
+          <img src="./img/o1.png" alt="스크롤 배추 이미지">
+          <img src="./img/o2.png" alt="스크롤 파 이미지">
+          <img src="./img/o4.png" alt="스크롤 양파 이미지">
+          <img src="./img/o1.png" alt="스크롤 배추 이미지">
+          <img src="./img/o2.png" alt="스크롤 파 이미지">
+          <img src="./img/o4.png" alt="스크롤 양파 이미지">
+          <img src="./img/o1.png" alt="스크롤 배추 이미지">
+          <img src="./img/o2.png" alt="스크롤 파 이미지">
+          <img src="./img/o4.png" alt="스크롤 양파 이미지">
+        </div>
+    </section>
+    </div>
+
+    <script src="./js/recipe2.js"></script>
+  </body>
+</html>

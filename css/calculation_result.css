@@ -1,0 +1,321 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+    font-family: 'Pretendard-Regular';
+
+}
+
+
+html,
+body {
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+	margin: 0;
+	padding: 2vw 1vw;
+	background-color: #ffffff;
+	font-family: "Trud Type", Helvetica, sans-serif;
+	font-size: 1rem;
+	line-height: 1.2;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+header {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+}
+
+
+.header__button {
+	position: absolute;
+	width: 2.2vw;
+	height: 2.2vw;
+	margin: 1vw;
+	border-radius: 50%;
+	border: 0;
+	background-color: #c6e421;
+	cursor: pointer;
+	right: 0;
+	top: -1vw;
+	outline: none;
+	animation-duration: 300ms;
+	animation-timing-function: ease;
+	z-index: 5;
+}
+
+
+.header__button[data-open="true"] {
+	background-color: #ffffff;
+	animation-name: scale;
+}
+
+.header__button[data-open="false"] {
+	transition: background-color 250ms linear;
+}
+
+
+@keyframes scale {
+	from {
+		transform: scale(0);
+	}
+
+	to {
+		transform: scale(100%);
+	}
+}
+
+
+.header__nav {
+	display: flex;
+	position: fixed;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 3vw 1vw;
+	background-color: #c6e421;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	visibility: hidden;
+	/* clip-path: circle(var(--radius) at calc(100% - 5vw) 4vw); */
+    z-index: 1;
+}
+
+
+.header__nav[data-active="true"] {
+	visibility: visible;
+}
+
+
+.header__menu {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+
+.header__menu>.header__menu-item {
+	margin-top: -0.7%;
+	margin-left: 3.7%;
+	font-size: 18vh;
+	line-height: 130%;
+	font-weight: bold;
+	list-style-type: none;
+}
+
+
+
+.header__menu-item a {
+	letter-spacing: -0.4vw;
+	color: #ffffff;
+	text-decoration: none;
+    
+}
+
+
+/*-------- header sublogo -------------*/
+
+
+#sublogo {
+    width: 100%;
+    height: auto;
+    border-bottom: solid 0.2vw black;
+}
+
+
+#sublogo h1 {
+    margin-left: 8vw;
+    font-size: 7rem;
+}
+
+
+#sublogo h4 {
+    margin-left: 8vw;
+    margin-bottom: 1vw;
+    color: gray;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+
+/*-------------section note--------------*/
+
+
+
+@font-face {
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+       
+section {
+    float: left;
+    width: 50%;
+    height: 62vw;
+}
+
+.note {
+ position: relative;
+    display: inline-block;
+    margin-top: 1vw;
+    color: #52331f;
+}
+
+.note img {
+    display: block;
+    width: 33vw;
+    height: 42vw;
+    z-index: 1;
+}
+
+.note h1 {    
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+    margin-top: -36.5vw;
+    margin-bottom: 2.4vw;
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+.n {
+    display: flex;
+    margin-top: 1vw;
+    margin-left: 3.5vw;
+}
+
+.n p {
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+    line-height: 240%;
+    font-size: 1vw;
+    margin-bottom: 4.1vw;
+}
+
+.n .n_right {
+    margin-left: 4vw;
+}
+
+.n_right p {
+    margin-bottom: 13.7vw;
+}
+
+h5 {
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+    font-size: 1vw;
+    position: fixed;
+}
+
+h5 input {
+    position: fixed;
+    width: 5.5vw;
+    height: 1.5vw;
+    margin-top: -0.3vw;
+}
+
+.result1 {
+    position: fixed;
+    margin-top: 25vw;
+}
+
+.result2 {
+    position: fixed;
+    margin-left: 14.5vw;
+    margin-top: 25vw;
+}
+
+
+
+/*------------- calculation  ---------*/
+/* ----- aside -----------*/
+
+
+aside {
+    width: 50%;
+    height: 62vw;
+    float: left;
+    align-items: center;
+    position: relative;
+}
+
+.calculator {
+    width: 18.5vw;
+    height: 27vw;
+    border: 0.15vw solid gray;
+    margin-top: 8vw;
+    margin-left: 23vw;
+    text-align: center;
+    background-color: #FFD466;
+    box-shadow: 0 0 1vw grey;
+    border-radius: 0.7vw;
+}
+
+.calculator__form {
+    height: 100%;
+    padding: 1.2vw;
+}
+
+.calculator__row {
+    margin: 0.6vw 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculator__display {
+    margin: 0 0 1.2vw;
+    width: 100%;
+    height: 4.5vw;
+    border: 0.1vw solid gray;
+    padding: 0.2vw 0.4vw;
+    text-align: right;
+    color: #b04600;
+    background-color: #FFFAED;
+    border-radius: 0.5vw;
+    font-size: 1.5vw;
+}
+
+.calculator__key {
+    width: 3.75vw;
+    height: 2.85vw;
+    cursor: pointer;
+    border: none;
+    transition: all .2s;
+    text-transform: uppercase;
+    border-radius: 0.5vw;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: rgb(76, 54, 50);
+    background-color: #ffffff;
+}
+
+.calculator__key--equal {
+    width: 7vw;
+}
+
+.calculator__key:hover {
+    background-color: #FF9900;
+    font-weight: 700;
+}
+
+.calculator__key::-moz-focus-inner {
+    border: none;
+}

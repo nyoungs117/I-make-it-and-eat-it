@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.calculation</title>
+    <link rel="stylesheet" href="./css/calculation.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/circular-revealer@0.0.8/dist/index.iife.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header>
+        <div id="sublogo">
+          <h1>RECOMMENDATION</h1>
+          <h4>: 주로 즐겨보는 사람들의 카드에 마우스 커서를 올려서 더 자세한 내용을 보세요</h4>
+        </div>
+        <div>
+          <button class="header__button nav-btn-js" type="button"></button>
+          <nav class="header__nav nav-js" data-active="false">
+            <ul class="header__menu">
+              <li class="header__menu-item"><a href="./index.html">Home</a></li>
+              <li class="header__menu-item">
+                <a href="./recipe.html">Recipe</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./calculation.html">Calculation</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./recommendation.html">Recommendation</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section id="calculation">
+        <div class="c_left">
+            <ul>
+                <li>
+                    <img class="left_1" src="./img/v1.png" alt="당근 이미지">
+                </li>
+                <li>
+                    <img class="left_2" src="./img/v2.png" alt="감자 이미지">
+                </li>
+                <li>
+                    <img class="left_3" src="./img/v3.png" alt="배추 이미지">
+                </li>
+                <li>
+                    <img class="left_4" src="./img/v4.png" alt="파 이미지">
+                </li>
+                <li>
+                    <img class="left_5" src="./img/v5.png" alt="양파 이미지">
+                </li>
+            </ul>
+        </div>
+    
+        <div class="c_right">
+
+            <div class="cr  cr1">
+                <img src="./img/v1.png" alt="선택된 당근이미지">
+                <h1>당근</h1>
+                <p>5320원</p>
+            </div>
+
+            <div class="cr cr2">
+                <img src="./img/v2.png" alt="선택된 감자이미지">
+                <h1>감자</h1>
+                <p>6610원</p>
+            </div>
+
+            <div class="cr cr3">
+                <img src="./img/v3.png" alt="선택된 배추이미지">
+                <h1>배추</h1>
+                <p>5600원</p>
+            </div>
+
+            <div class="cr cr4">
+                <img src="./img/v4.png" alt="선택된 파이미지">
+                <h1>파</h1>
+                <p>4000원</p>
+            </div>
+
+            <div class="cr cr5">
+                <img src="./img/v5.png" alt="선택된 양파이미지">
+                <h1>양파</h1>
+                <p>5900원</p>
+            </div>
+        </div>
+
+        
+        <p class="result-btn">
+          <a href="calculation_result.html">CALCULATION RESULT <img src="./img/next.png" alt=""></a>
+        </p>
+    </section>
+    
+
+      
+    </div>
+
+    <script src="./js/calculation.js"></script>
+  </body>
+</html>

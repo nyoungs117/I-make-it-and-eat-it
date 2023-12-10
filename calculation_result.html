@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3_2.calculation_result</title>
+    <link rel="stylesheet" href="css/calculation_result.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/circular-revealer@0.0.8/dist/index.iife.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header>
+        <div id="sublogo">
+          <h1>RECOMMENDATION</h1>
+          <h4>: 주로 즐겨보는 사람들의 카드에 마우스 커서를 올려서 더 자세한 내용을 보세요</h4>
+        </div>
+        <div>
+          <button class="header__button nav-btn-js" type="button"></button>
+          <nav class="header__nav nav-js" data-active="false">
+            <ul class="header__menu">
+              <li class="header__menu-item"><a href="./index.html">Home</a></li>
+              <li class="header__menu-item">
+                <a href="./recipe.html">Recipe</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./calculation.html">Calculation</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="./recommendation.html">Recommendation</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+
+      <aside>
+        <!-- CALCULATOR -->
+        <div class="calculator">
+          <!-- CALCULATOR FORM -->
+          <form class="calculator__form">
+            <!-- CALCULATOR ROW -->
+            <div class="calculator__row">
+              <input
+                class="calculator__display"
+                id="display"
+                type="text"
+                disabled
+              />
+            </div>
+            <!-- CALCULATOR ROW -->
+            <div class="calculator__row">
+              <button
+                type="button"
+                value="c"
+                class="calculator__key calculator__clear"
+              ></button>
+              <button
+                type="button"
+                value="<--"
+                class="calculator__key calculator__backspace"
+              ></button>
+              <button
+                type="button"
+                value="^3"
+                class="calculator__key calculator__power"
+              ></button>
+              <button
+                type="button"
+                value="+"
+                class="calculator__key calculator__button"
+              ></button>
+            </div>
+            <!-- CALCULATOR ROW -->
+            <div class="calculator__row">
+              <button
+                type="button"
+                value="9"
+                class="calculator__key calculator__button"
+              ></button>
+              <button
+                type="button"
+                value="8"
+                class="calculator__key calculator__button"
+              ></button>
+              <button
+                type="button"
+                value="7"
+                class="calculator__key calculator__button"
+              ></button>
+              <button
+                type="button"
+                value="-"
+                class="calculator__key calculator__button"
+              ></button>
+            </div>
+            <!-- CALCULATOR ROW -->
+            <div class="calculator__row">
+              <button
+                type="button"
+                value="6"
+                class="calculator__key calculator__button"
+              ></button>
+              <button
+                type="button"
+                value="5"
+                class="calculator__key calculator__button"
+              ></button>
+              <button
+                type="button"
+                value="4"
+                class="calculator__key calculator__button"
+              ></button>
+              <button
+                type="button"
+                value="*"
+                class="calculator__key calculator__button"
+              ></button>
+            </div>
+            <!-- CALCULATOR ROW -->
+            <div class="calculator__row">
+              <button
+                type="button"
+                value="3"
+                class="calculator__key calculator__button"
+              ></button>
+              <button
+                type="button"
+                value="2"
+                class="calculator__key calculator__button"
+              ></button>
+              <button
+                type="button"
+                value="1"
+                class="calculator__key calculator__button"
+              ></button>
+              <button
+                type="button"
+                value="/"
+                class="calculator__key calculator__button"
+              ></button>
+            </div>
+            <!-- CALCULATOR ROW -->
+            <div class="calculator__row">
+              <button
+                type="button"
+                value="0"
+                class="calculator__key calculator__button"
+              ></button>
+              <button
+                type="button"
+                value="."
+                class="calculator__key calculator__button"
+              ></button>
+              <button
+                type="button"
+                value="="
+                class="calculator__key calculator__key--equal"
+              ></button>
+            </div>
+          </form>
+        </div>
+      </aside>
+
+      <section>
+        <div class="note">
+          <img src="./img/sub5.png" alt="공책 이미지" />
+        
+          <h1>일주일 가계부</h1>
+          <div class="n">
+          <div class="n_left">
+            <p>- 배달 했을 때 <br>
+              OO치킨 : 21600원 <br>
+              OO치킨 배달비 : 4000원 <br>
+              백채O김치찌개 : 10000원 <br>
+              배달비 X 포장함 <br>
+              그릭요거트 : 14300원 <br> 
+              그릭요거트 배달비 : 2500원 <br>
+              마라쿵푸 : 18000원 <br>
+              마라쿵푸 배달비 : 1500원</p>
+          </div>
+          <h5 class="result1">총 합계 : <input type="text" name="left_result" class="result1-input" placeholder="총 합계"></h5>
+
+          <div class="n_right">
+            <p>- 집에서 해먹었을 때 <br>
+              알배기 배추 : 5600원 <br>
+              감자 : 6610원 <br>
+              당근 : 5320원 <br>
+              양파 : 5900원 <br>
+              파 : 4000원 <br>
+              배달비 X 집 앞 마트 이용</p>
+          </div>
+
+          <h5 class="result2">총 합계 : <input type="text" name="right_result" class="result2-input" placeholder="총 합계"></h5>
+
+        </div>
+         
+        </div>
+      </section>
+
+      
+    </div>
+
+    <script src="./js/calculation_result.js"></script>
+  </body>
+</html>
